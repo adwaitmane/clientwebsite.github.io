@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!--The lang attribute tells the browser that the language is going to be English-->
+
+<head>
+
+<meta charset="utf-8" /> <!--chartset attributes tells the browser that the charterset is utf-8-->
+<title>AeroKontiki Fishing Drone</title><!--Sets the tab name shown on the browser to Aerokontiki Fishing Drone -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" > <!--Allows for responsiveness of the website-->
+<link rel="stylesheet" href="CSS/blueberry.css" /> <!--LInks the HTML to the Javascript for the image slider-->
+<link rel="stylesheet" href="CSS/style.css"/> <!--LInks the HTML to the CSS style sheet-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Links the HTML to an icon stylesheet for the social media icons and hamburger icon-->
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> <!--LInks exteral fonts so that they can be displayed on the webpage-->
+
+<!--Script for the Javascript Image Sliderr-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="js/jquery.blueberry.js"></script>
+
+<script>
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+</head><b></b>
+
+<!--Main Body Section-->
+<body>
+<!--HTML for the header/navigation bar so that the image is in the top left, while the navigation buttons are in the top right-->
+	<header>
+		<a href="index.html", id="logo"> <img src="images/aklogo.jpg"/> </a>
+		<nav>
+			<a href="#", id="menu-icon"><i class="fa fa-bars"></i>
+			</a>
+			<ul>
+				<li><a href="index.html" class="current">Home</a></li>
+				<li><a href=products.html>Products</a></li>
+				<li><a href="aboutus.html" >About Us</a></li>
+				<li><a href="gallery.html" >Gallery</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<!--HTML Code for the image slider (image sources). The classes are linked inside the javascript document which enables it to work properly-->
+		<div id="doc">
+			<div id="content">
+				<div class="blueberry">
+					<ul class="slides">
+						<li><img src="images/slide1.jpg"/></li>
+						<li><img src="images/slide2.jpg"/></li>
+						<li><img src="images/slide3.jpg" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+<!--HTML code for the title and paragraph on the page-->
+	<div>
+		<h1 id="heading">Introducing the world's first autopilot fishing drone kontiki</h1>
+		<p id="paragraph">The AeroKontiki is the most powerful and only fishing drone on the market that can cast a 25 hook baited long line up to 1200 meters out to sea. After delivering the baits, it uses a sophisticated autopliot system that returns to its takeoff location. </p>
+	</div>
+
+	<!--HTML code for the 3 images with their corresponding text/buttons. The sections seperates the 3 columns and the layout is done so that the images sit on top of the text and buttons-->
+<div class="background">
+		<section>
+			<img src="images/basic.jpg"/>
+			<h4>Basic Package</h4>
+			<a href="products.html"><button class=" button button2"> Learn More </button></a>
+		</section>
+		<section>
+			<img src="images/premium.jpg"/>
+			<h4>Premium Package</h4>
+			<a href="products.html"><button class=" button button2"> Learn More </button></a>
+		</section>
+		<section>
+			<img src="images/ultra.jpg"/>
+			<h4>Ultra Package</h4>
+			<a href="products.html"><button class=" button button2"> Learn More </button></a>
+		</section>
+		<div class="clear"></div>
+
+		<!--HTML code for lower section with side by side images and text, with a main light grey background colour-->
+		<section class="backgroundcolour" style="background-color:#f7f7f7; width:100%;">
+		<section class="content1">
+		<h3> Effective fishing with great results </h3>
+		<p> Greatly improve the chances of a catch by delivering 16 – 25 hooks with fresh juicy baits and burley up to 1200 m out to sea, without getting your feet wet.
+		    <br><br>
+		    Pull in the whole catch using a powerful electric game reel, powered by a LiPo battery mounted right on the rod.
+		    <br><br>
+		    This provides much more flexibility of movement than using a car battery to power your game reel. </p>
+		</section>
+		<section style="margin-right:20px;">
+		<img src="images/personwithdrone.jpg" alt=>
+		</section>
+		<section class="content2">
+		<h3>Support straight from the developer</h3>
+		<p>When you purchase your AeroKontiki, we welcome the beginning of a new relationship, and offer ongoing, personalized customer service to meet your needs.
+		    <br><br>
+		    Upon purchase, you automatically join the AeroKontiki Community, where you will have direct access to newsletters, local users, knowledge sharing, updates, and any other assistance as and when needed.
+		    <br><br>
+		    Personal one-on-one flight training, as well as access to training videos are provided as an added benefit.</p>
+		</section>
+		<section class="content1">
+		<img src="images/fish.jpg" alt="">
+		</section>
+</section>
+
+
+<!--HTML code for the Footer-->
+
+<footer class="footer-distributed">
+<div class="footer-left">
+	<p class="footer-links">
+	<a href="index.html">Home</a>
+	·
+	<a href="products.html">Products</a>
+	·
+	<a href="aboutus.html">About Us</a>
+	·
+	<a href=gallery.html>Gallery</a>
+	</p>
+<br>	<p class="footer-company-name">AeroKontiki &copy; 2020</p>
+</div>
+<div class="footer-center">
+</div>
+<div class="footer-right">
+
+<!--The contact us section part of the footer-->
+<p class="footer-company-about">
+<span>Contact Us</span>
+<span>+64 927 46293</span>
+<span>+64 927 46273</span>
+
+<!--Links the social media icons to AeroKonitkis actual social mediapages-->
+<div class="footer-icons">
+<a href="https://www.facebook.com/aerokontiki/"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/aerokontiki?lang=en"><i class="fa fa-twitter"></i></a>
+<a href="https://www.youtube.com/channel/UCItUCqtJ38RJfcDTwsY_U8g"><i class="fa fa-youtube"></i></a>
+</div>
+</div>
+</footer>
+</body>
+</html>

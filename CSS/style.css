@@ -1,0 +1,586 @@
+/*Sets the margins and padding for the entire site to zero so that it fills the entire screen */
+*{
+	margin:0;
+	border:0;
+	padding:0;
+}
+
+/*Sets the font of all paragraph text to open sans */
+p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Sets the font of all heading text to Lato font, added some padding and also alligned in the center*/
+h1 {
+	text-align: center;
+	font-size: 180%;
+	line-height: 120%;
+	padding: 1.5% 0;
+	font-family: 'Lato', sans-serif
+}
+
+/*Sets all the h2 text to underlined, with open sans font along with some padding */
+h2 {
+	text-decoration: underline;
+	line-height: 280%;
+	padding-left: 2%;
+font-family: 'Open Sans', sans-serif;
+}
+
+/*Sets the H3 font to slightly smaller, with some padding and open sans font */
+h3  {
+	font-size: 110%;
+	line-height: 190%;
+	padding: 5% 0;
+font-family: 'Open Sans', sans-serif;
+}
+/*Sets the H4 font to slightly smaller, with some padding and open sans font */
+h4  {
+	font-size: 100%;
+	line-height: 190%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Aligns all images in the center of the screen, with the max width of 100% (it will never become larger than the original size)*/
+img {
+	text-align: center;
+	max-width: 100%;
+}
+
+/*Makes the navigation buttons a dark grey colour, bold and the Open Sans font. There is also some padding around them so they are spaced apart*/
+a {
+	color: #222222;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*This makes the buttons turn to a light grey when the cursor is hovered on the buttons */
+a:hover {
+	color: grey;
+}
+
+/*Makes the navigation bar background white and silghtly transparent and stretch to cover the width of the screen. The sticky position makes it stay at the top of the screen even when scrolled.*/
+header {
+	background: white;
+	width: 100%;
+	height: 100px;
+	position: sticky;
+	top:0;
+	left:0;
+	z-index: 100;
+	opacity: 0.90;
+	}
+
+/*Sets the AeroKontiki logo to the top left with some margins from the left */
+#logo {
+	margin: 8px;
+	float: left;
+	width: 300px;
+	height: 60px;
+}
+
+/*Makes the heading text fall right underneath the above content and the font size to 30px */
+#heading{
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/*Alligns all the paragraph text in the center of the screen */
+#paragraph{
+	text-align: center;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+/*Alligns all the bulletpoint text in the center*/
+#bulletpoints{
+	text-align: center;
+}
+
+ /* Navbar CSS - adds padding to the right*/
+nav {
+	float: right;
+	padding: 10px 20px 20px 50px;
+}
+
+/* Adds no style to the nab bar buttons (e.g. no bullet points or design)*/
+ul {
+	list-style: none;
+	}
+
+	/* Navbar CSS - Keeps all the buttons in line */
+nav ul li {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+
+/* Hides the hamburger menu when the screen size is large*/
+#menu-icon {
+	display: hidden;
+	width: 0px;
+	height: 0px;
+	color: white;
+	}
+
+/* Makes the "home" button in the nav bar stay blue no matter what so it stands out*/
+.current{
+	color: #2ea3f2;
+}
+/* Makes the "home" button become a darker blue */
+.current:hover{
+	color: #2589cc;
+}
+
+/* Makes the background colour of the slideshow section white */
+  #doc {
+	background-color: white;
+}
+
+/*Sets margins to the image slider */
+.blueberry {
+	max-width: 960px;
+	margin-top: 3%;
+}
+
+/* Sets margins for the slideshow so that there is space on each side*/
+#content {
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1140px;
+}
+
+/* Makes all of the buttons have white backgrounds, display text in the center and have the fading colour transition*/
+.button2 {
+  color: #2ea3f2;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 25px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+	border: 3px solid #2ea3f2;
+	border-radius: 5px;
+	background-color: white;
+
+}
+
+/*Makes the text and border colour go slightly darker when the user hovers above the button*/
+.button2:hover {
+  background-color: white;
+	border-color: #2589cc;
+  color: #2589cc;
+}
+
+/* Float four columns side by side */
+.cardcolumn {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+}
+/* Remove extra left and right margins, due to padding in columns */
+.cardrow {margin: 0 15%;
+margin-bottom: 2%;
+margin-top: 2%;
+}
+
+/* Clear floats after the columns */
+.cardrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+/*Adds a darker/heavier shadow when the user hovers above the cards */
+.card:hover {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4); /* this adds the "floating" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .cardcolumn {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* to align three coloumns in the sections*/
+section{
+	width:33.3%;
+	float: left;
+padding: 0px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/*Adds a border to all boxes*/
+* {
+  box-sizing: border-box;
+}
+
+/*Makes the 3 columns equal in width and spaced apart*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats after rows) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clear {
+	clear: both;
+}
+
+
+/*Sets one section to the left and the other section to the right so they are side to side */
+.content1 {
+	width: 48%;
+	text-align: center;
+	float: left;
+	display: inline-block;
+ 	margin-right: 1%;
+	padding-left: 15%;
+}
+
+.content2 {
+	width: 48%;
+	text-align: center;
+	float: right;
+	display: inline-block;
+ 	margin-left: 1%;
+	padding-right: 15%;
+}
+
+/*Sets the footer at the very bottom of the page */
+footer{
+	bottom: 0;
+}
+
+/*Makes the background colour of the footer a dark grey with a slight shadow */
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+/*Alligns all of the content inside the footer in one row */
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*Sets the columns to take up 40% of the width each */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/*Makes the links in the footer white */
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+/*Makes the links inline with eachother */
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+/*Makes the company name and copyright a light grey colour */
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/*Sets the center columns width to 35% */
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+/*Sets the right columns width to 20% */
+.footer-distributed .footer-right{
+	width: 20%;
+}
+/* */
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/*Styles the "Contact Us" Column */
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/* Adds margins to the social media icons so there is space on top */
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+/*Styles the box that the icons sit inside of so that it has a grey background and the icons are centered*/
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 50px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 2px;
+}
+
+/*Makes the footer responsive by centering all the content and reducing font size when the screen size is less than 880px */
+@media (max-width: 880px) {
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+/*Alligns all of the content in each of the columns to the center in one block */
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+/*Makes the columns all 33.3% wide so the 3 columns are equal in width and are equally spaced apart */
+	.column {
+	  float: left;
+	  width: 33.3%;
+	  margin-bottom: 16px;
+	  padding: 0 8px;
+	}
+
+	/* Adds a shadow to the card to make it look more interesting and "elevated. Also adds a slight margin so theres space around it"*/
+	.card {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	  margin: 8px;
+	}
+
+	/* Adds lower padding to the containers so there is some whitespace */
+	.container {
+	  padding: 0 16px;
+	}
+
+/*Clears the padding and allignment of the containers after so that none of the next content is affected */
+	.container::after, .row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+/*Makes the Subtitle text in the team member cards grey colour */
+	.title {
+	  color: grey;
+	}
+
+	/*Makes the background colour of the buttons white, the text a light blue and a border as well*/
+	.button2 {
+	  background-color: white;
+	  color: #2ea3f2;
+	  border: 3px solid #2ea3f2;
+		border-radius: 5px;
+	}
+
+/*Adds some padding to the video and maintains the aspect radio to 16:9 */
+.video{
+	position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+/*Makes the box for the video 100% the width and height of the video, and adjusts margins based on screen size */
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------MEDIA!!!---------------*/
+@media screen and (max-width: 650px) {
+
+/*Makes all of the columns centered and stack on top of eachother while filling the width of the mobile screen */
+	.column {
+		width: 100%;
+		display: block;
+	}
+}
+@media screen and (max-width: 478px) {
+
+/*Makes all of the font size 10px when the screen size is less thaan 478px */
+	body {
+		font-size: 10px;
+	}
+}
+
+/*All of the following code will apply when the screen width is less than 800px */
+@media screen and (max-width:800px) {
+
+/*Aligns all of the paragraph text in the center */
+	p{
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	/*Aligns all of the heading text in the center */
+	h1{
+		text-align: center;
+	}
+
+/*Makes the navigation bar stay at the top of the scren when scrolled */
+	header {
+		position: sticky;
+	}
+
+	/*Displays the hamburger menu logo */
+	#menu-icon {
+		display:inline-block;
+		color: black;
+	}
+
+/*Makes the full screen navigation bar disappear so that only the hamburger menu is visible */
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: white;
+		border: 1px solid #FFF;
+		right: 20px;
+		top: 60px;
+		width: 90%;
+		border-radius: 2px 0 2px 2px;
+	}
+
+	/*Displays the drop down menu when the hamburger logo is clicked */
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+	nav:hover ul {
+		display: block;
+	}
+
+/*Aligns all of the content textboxes in the center with padding on each side so there is some white space */
+	.content1{
+		width: 100%;
+		text-align: center;
+		float: left;
+		display: inline-block;
+	 	background-color: #f7f7f7;
+	 	margin-left: auto;
+		margin-right: auto;
+		margin-top: 4%;
+		padding-left: 0;
+		margin-bottom: 3%;
+	}
+
+	/*Aligns all of the content textboxes in the center with padding on each side so there is some white space */
+	.content2 {
+		width: 100%;
+		text-align: center;
+		float: left;
+		display: inline-block;
+		background-color: #f7f7f7;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 4%;
+		padding-right: 0;
+	}
+
+/*Reduces the logo size to 50% of its original size */
+	#logo {
+		margin: 8px;
+		float: left;
+		width:50%;
+	}
+
+/*Alligns the paragraph text in the center */
+	#paragraph{
+		text-align: center;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+
+/*Keeps the same style of the buttons, but slightly smaller on a mobile screen */
+	.button1 .button2 {
+	  color: white;
+	  padding: 5px 5px;
+	  text-align: center;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin-top: 25px;
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+	}
+
+/*Keeps the buttons original style */
+	.button2 {
+	  background-color: white;
+	  color: #2ea3f2;
+	  border: 3px solid #2ea3f2;
+		border-radius: 5px;
+	}
+
+/*Makes the button border and text slightly darker when the user hovers above it */
+	.button2:hover {
+	  background-color: white;
+		border-color: #2589cc;
+	  color: #2589cc;
+	}
+
+	/*Makes the section centered and use 100% of the width of the screen */
+	section {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+}
